@@ -1,0 +1,28 @@
+mixin skills(skill, className)
+	.skill-section__unit
+		.skill-section__label #{skill}
+		.skill-section__icons(class=className)
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+
+
+section.skills-section
+	.section-header
+		.section-header__icon-wrapper
+			img.section-header__icon(src="./images/light-bulb.svg")
+		h2.section-header__title.skills Skills
+	.skill-section__lockup
+		+skills('Creative', 'skill-10')
+		+skills('Teamwork', 'skill-12')
+		+skills('Innovate', 'skill-8')
+		+skills('Communication', 'skill-12')

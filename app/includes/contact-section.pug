@@ -1,0 +1,26 @@
+mixin contact-info(label, info)
+	.contact-section__lockup
+		h2.contact-section__title #{label}
+		p.contact-section__text #{info}
+
+section.contact-section
+	.section-header
+		.section-header__icon-wrapper
+			img.section-header__icon(src="./images/phone.svg" alt="")
+		h2.section-header__title Contact
+	+contact-info('Address', 'Main Street, Spb')
+	+contact-info('Email', 'alex.alexeev23061991@gmail.com')
+	+contact-info('Phone', '555-555-555')
+	+contact-info('Website', 'www.lovejapan.com')
+	//- .contact-section__lockup
+	//- 	h2.contact-section__title Address
+	//- 	p.contact-section__text Main Street, Spb
+	//- .contact-section__lockup
+	//- 	h2.contact-section__title Email
+	//- 	p.contact-section__text alex.alexeev23061991@gmail.com
+	//- .contact-section__lockup
+	//- 	h2.contact-section__title Phone
+	//- 	p.contact-section__text 555-555-555
+	//- .contact-section__lockup
+	//- 	h2.contact-section__title Website
+	//- 	p.contact-section__text www.lovejapan.com

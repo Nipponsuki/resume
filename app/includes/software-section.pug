@@ -1,0 +1,31 @@
+mixin skills(skill, className)
+	.software-section__unit
+		.software-section__label #{skill}
+		.software-section__icons(class=className)
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+				span
+
+
+section.software-section
+	.section-header.margin-left
+		.section-header__icon-wrapper
+			img.section-header__icon(src="./images/computer-desktop.svg")
+		h2.section-header__title.bigger software
+	.software-section__lockup
+		+skills('Photoshop', 'software-10')
+		+skills('Illustrator', 'software-12')
+		+skills('Indesign', 'software-8')
+		+skills('Dreamwaver', 'software-12')
+		+skills('After Effects', 'software-10')
+		+skills('html&css3', 'software-12')
+

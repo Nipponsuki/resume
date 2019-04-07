@@ -1,0 +1,15 @@
+mixin info(span, date, univ, text)
+	.info
+		h3.info__title.info__title--black <span>#{span}</span> // #{date}
+		h3.info__subtitle #{univ}
+		p.info__text #{text}
+
+
+section.experience-section
+	.section-header.margin-left
+		.section-header__icon-wrapper
+			img.section-header__icon(src="./images/portfolio.svg")
+		h2.section-header__title.bigger Experience
+	+info('Company Name','Feb 2011 - Jun 2014','Your job here','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+	+info('Company Name','Feb 2011 - Jun 2014','Your job here','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+	+info('Company Name','Feb 2011 - Jun 2014','Your job here','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')

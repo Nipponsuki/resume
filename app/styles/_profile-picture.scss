@@ -1,0 +1,46 @@
+section.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 0.5rem;
+
+  .profile-picture__avatar-wrapper {
+    width: 23rem;
+    height: 23rem;
+    background: white;
+    border: 0.5px solid $primary-color;
+    border-radius: 50%;
+    padding: 12px;
+  }
+
+  .profile-picture__first-name {
+    font-size: 5.8rem;
+    margin-top: 3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .profile-picture__last-name {
+    font-size: 6.5rem;
+    line-height: 0.5;
+    margin-bottom: 1.8rem;
+    font-family: "BoldSoft", sans-serif;
+  }
+
+  .profile-picture__job {
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .profile-picture__avatar {
+    width: 100%;
+    border-radius: 50%;
+  }
+}

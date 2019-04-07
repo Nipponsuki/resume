@@ -1,0 +1,18 @@
+mixin info(span, date, univ, text)
+	.info
+		h3.info__title <span>#{span}</span> // #{date}
+		h3.info__subtitle #{univ}
+		p.info__text #{text}
+
+
+
+section.education-section
+	.section-header.margin-left
+		.section-header__icon-wrapper
+			img.section-header__icon(src='./images/star-full.svg' alt='')
+		h2.section-header__title.bigger Education
+	+info('Master Degree','Feb 2011 - Jun 2014','University Name','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+	+info('Master Degree','Feb 2011 - Jun 2014','University Name','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+	+info('Master Degree','Feb 2011 - Jun 2014','University Name','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+	+info('Master Degree','Feb 2011 - Jun 2014','University Name','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.')
+
